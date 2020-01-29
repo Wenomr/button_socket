@@ -19,10 +19,8 @@ const broadcast = (data, ws) => {
 wss.on('connection', (ws) => {
     console.log("Новое соединение");
     ws.send(JSON.stringify({data}));
-    console.log(wss.clients);
     ws.on('message', (message) => {
         let value = JSON.parse(message);
-        console.log(value);
         switch (value.type) {
             case 'TOGGLE':
                 if (data === "OFF") {
