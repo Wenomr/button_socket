@@ -12,7 +12,7 @@ const Button = ({ button, toggle, connect }) => {
 
   useEffect(() => {
     connect();
-  }, [])
+  }, [connect])
   
   return (
     <div className="jumbotron">
