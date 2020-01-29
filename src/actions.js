@@ -6,6 +6,6 @@ export const toggle = () => {
 
 export const connect = () => {
   return {
-      type: "CONNECT",
+    type: "CONNECT",
   };
 };
