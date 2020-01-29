@@ -1,12 +1,11 @@
-export const toggle = (payload) => {
+export const toggle = () => {
   return {
-    type: 'TOGGLE',
-    payload: payload
+    type: 'TOGGLE'
   };
 };
 
 export const connect = () => {
-    return {
-        type: "CONNECT",
-    };
+  return {
+      type: "CONNECT",
+  };
 };
